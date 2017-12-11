@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 m-auto">
+            <div class="card bg-warning">
+                <div class="card-body">
+
+
+                    <div class="form-group row">
+                        <label class='col-form-label col-sm-5' id="x">First Number</label>
+                        <div class="col-sm-7">
+                            <input type="text" name="first_number" id="firstNumber" /></div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class='col-form-label col-sm-5'>Second Number</label>
+                        <div class="col-sm-7">
+                            <input type="text" name="second_number" id="secondNumber" /></div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class='col-form-label col-sm-5'></label>
+                        <div class="col-sm-7">
+                            <input type="submit" name="add" id="add" class="btn btn-success" value="+" />
+                            <input type="submit" name="sub" id="sub" class="btn btn-success" value="-" />
+                            <input type="submit" name="mul" id="mul" class="btn btn-success" value="*" />
+                            <input type="submit" name="div" id="div" class="btn btn-success" value="/" />
+                            <input type="submit" name="mod" id="mod" class="btn btn-success" value="%" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class='col-form-label col-sm-5'>Result</label>
+                        <div class="col-sm-7">
+                            <input type="text" name="result" id="result" />
+                        </div>
+                      </div>
+
+                    <div class="form-group row">
+                        <label class='col-form-label col-sm-5'></label>
+                        <div class="col-sm-7">
+                            <input type="reset" name="reset" class="btn btn-success" value="Reset" onClick="reset()"/>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 m-auto">
+            <div class="card bg-warning">
+                <div class="card-body">
+
+
+                    <form name=calcform id="reset">
+                        <input type=text name=txt1  style="text-align:right"><br>
+                        <input type=button name=btn9 value=9 class="btn btn-md btn-success" onclick="displynum(btn9.value)">
+                        <input type=button name=btn8 value=8 class="btn btn-md btn-success" onclick="displynum(btn8.value)">
+                        <input type=button name=btn7 value=7 class="btn btn-md btn-success" onclick="displynum(btn7.value)">
+                        <input type=button name=addbtn value=+ class="btn btn-md btn-success" onclick="displynum(addbtn.value)"><br>
+                        <input type=button name=btn6 value=6 class="btn btn-md btn-success" onclick="displynum(btn6.value)">
+                        <input type=button name=btn5 value=5 class="btn btn-md btn-success" onclick="displynum(btn5.value)">
+                        <input type=button name=btn4 value=4 class="btn btn-md btn-success" onclick="displynum(btn4.value)">
+                        <input type=button name=subbtn value=- class="btn btn-md btn-success" onclick="displynum(subbtn.value)"><br>
+                        <input type=button name=btn3 value=3 class="btn btn-md btn-success" onclick="displynum(btn3.value)">
+                        <input type=button name=btn2 value=2 class="btn btn-md btn-success" onclick="displynum(btn2.value)">
+                        <input type=button name=btn1 value=1 class="btn btn-md btn-success" onclick="displynum(btn1.value)">
+                        <input type=button name=btnmul value=* class="btn btn-md btn-success" onclick="displynum(btnmul.value)"> <br>
+                        <input type=button name=btn0 value=0 class="btn btn-md btn-success" onclick="displynum(btn0.value)">
+                        <input type=button name=potbtn value=. class="btn btn-md btn-success" onclick="displynum(potbtn.value)">
+                        <input type=button name=eqlbtn value== class="btn btn-md btn-success" onclick="txt1.value=eval(txt1.value)">
+                        <input type=button name=divbtn value=/ class="btn btn-md btn-success" onclick="displynum(divbtn.value)">
+
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/my-script.js"></script>
+</body>
+</html>
